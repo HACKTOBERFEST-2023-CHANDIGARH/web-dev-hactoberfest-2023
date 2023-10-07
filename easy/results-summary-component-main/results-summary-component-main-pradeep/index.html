@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <article class="results">
+        <div class="card">
+          <section id="PC-size" class="top-section">
+            <h3 class="compare-text">Your Result</h3>
+            <div class="circle">
+              <h1>76</h1>
+              <p class="compare-text">of 100</p>
+            </div>
+            <h2>Great</h2>
+            <div class="compare-text">
+                <p>You scored higher than 65% of the <p>
+                <p>people who have taken these tests.</p>
+            </div>
+          </section>
+          <section id="PC-size" class="bottom-section">
+            <h3 class="a">Summary</h3>
+            <div class="flex-cointainer">
+              <div class="flex-item" id="Reaction">
+                <div class="child-item">  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+                  <span> Reaction</span>
+                </div>
+                <div class="child-item">
+                  <span class="span-2">80</span><span class="span"> / 100 </span>
+                </div>
+              </div>
+              <div class="flex-item" id="Memory">
+                <div class="child-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0"/></svg>
+                  <span> Memory</span>
+                </div>
+                <div class="child-item">
+                  <span class="span-2">92</span><span class="span"> / 100 </span>
+                </div>
+              </div>
+              <div class="flex-item" id="Verbal">
+                <div class="child-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#00BB8F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z"/></svg>
+                  <span> Verbal</span>
+                </div>
+                <div class="child-item">
+                  <span class="span-2">61</span><span class="span"> / 100</span> 
+                </div>
+              </div>
+              <div class="flex-item" id="Visual">
+                <div class="child-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z"/><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z"/></svg>
+                  <span> Visual</span>
+                </div>
+                <div class="child-item">
+                  <span class="span-2">72</span><span class="span"> / 100 </span>
+                </div>
+              </div>
+            </div>
+            <div class="Continue">
+              <button>Continue</button>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

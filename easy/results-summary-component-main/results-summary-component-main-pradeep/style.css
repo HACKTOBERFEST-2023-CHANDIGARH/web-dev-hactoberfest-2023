@@ -1,0 +1,181 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+    font-family: 'Hanken Grotesk';
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  h1 {
+    font-size: 2em;
+    margin-top: 0.3em;
+    font-weight: 800;
+  }
+  .top-section {
+    text-align: center;
+    color:white;
+  }
+  .top-section {
+    background: linear-gradient(0deg, hsl(241, 81%, 54%),hsl(252, 100%, 67%)100%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 2em; 
+  }
+  svg {
+    display: inline-block;
+    margin:-4px;
+    margin-right: 9px;
+  }
+  .circle h1 {
+    font-size: 3.5em;
+  }
+  .circle {
+    height: 140px;
+    width: 140px;
+    background-image: linear-gradient(0deg, hsla(241, 72%, 46%, 0)0% ,hsla(256, 72%, 46%, 1)100%);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .Continue {
+    margin:0.5em;
+    display: grid;
+  }
+  button{
+    border-radius: 25px;
+    border:none;
+    cursor: pointer;
+    background-color: #303b5a ;
+    color: hsl(221, 100%, 96%);
+    font-size: 1.15em;
+    height: 3em;
+    margin-top: 0.75em;
+
+  }
+  html {
+    font-size:18px;
+  }
+  .bottom-section {
+    padding:2em;
+  }
+  .flex-cointainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px; 
+  }
+  .flex-item {
+    height: 60px;
+    width: 315px;
+    border-radius: 8px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #Reaction {
+    background-color:hsla(0, 100%, 67%, 0.06);
+    color:hsl(0, 100%, 67%);
+  }
+  #Memory {
+    background-color: hsla(39, 100%, 56%, 0.06);
+    color:hsl(39, 100%, 56%);
+  }
+  #Verbal {
+    background-color: hsla(166, 100%, 37%, 0.06);
+    color:hsl(166, 100%, 37%);
+  }
+  #Visual {
+    background-color: hsla(234, 85%, 45%, 0.06);
+    color:hsl(234, 85%, 45%);
+
+  }
+  h3 {
+    margin-bottom: 1.5em;
+  }
+  h2 {
+    margin:1em;
+    margin-bottom: 0.4em;
+    font-weight:500;
+  }
+  .compare-text {
+    color:hsla(241, 100%, 89%,0.8); 
+  }
+  .span {
+    color: hsla(224, 30%, 27%,0.6);
+  }
+  .a {
+    color: hsl(224, 30%, 27%);
+  }
+  .span-2 {
+    color: hsl(224, 30%, 27%);
+  }
+  .child-item{
+    margin: 15px;
+  }
+  button:hover {
+    background: linear-gradient(0deg, hsl(241, 81%, 54%),hsl(252, 100%, 67%)100%);
+  } 
+  @media(min-width:576px){
+    .results {
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .top-section {
+      border-radius: 20px;
+    }
+    .card {
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      border-radius: 20px;
+      -webkit-box-shadow: 14px 15px 55px -10px rgba(182, 185, 241, 1);
+      -moz-box-shadow: 14px 15px 55px -10px rgba(182, 185, 241, 1);
+      box-shadow: 14px 15px 55px -10px rgba(182, 185, 241, 1);
+    }
+  }
