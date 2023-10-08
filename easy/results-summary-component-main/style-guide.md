@@ -11,25 +11,29 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Light red: hsl(0, 100%, 67%)
-- Orangey yellow: hsl(39, 100%, 56%)
-- Green teal: hsl(166, 100%, 37%)
-- Cobalt blue: hsl(234, 85%, 45%)
+- Light red: hsl(0, 100%, 67%) (0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%) #ffb01f
 
+- Green teal: hsl(166, 100%, 37%) #00bd91
+- Cobalt blue: hsl(234, 85%, 45%)  #1125d4
 ## Gradients
 
-- Light slate blue (background): hsl(252, 100%, 67%)
-- Light royal blue (background): hsl(241, 81%, 54%)
+- Light slate blue (background): hsl(252, 100%, 67%) #7857ff
+- Light royal blue (background): hsl(241, 81%, 54%) #2e2be9
 
-- Violet blue (circle): hsla(256, 72%, 46%, 1)
-- Persian blue (circle): hsla(241, 72%, 46%, 0)
+- Violet blue (circle): hsla(256, 72%, 46%, 1) 
+#4e21ca
+
+- Persian blue (circle): hsla(241, 72%, 46%, 0)  #2421ca
+
+
 
 ### Neutral
 
 - White: hsl(0, 0%, 100%)
-- Pale blue: hsl(221, 100%, 96%)
-- Light lavender: hsl(241, 100%, 89%)
-- Dark gray blue: hsl(224, 30%, 27%)
+- Pale blue: hsl(221, 100%, 96%) #ebf1ff
+- Light lavender: hsl(241, 100%, 89%) #c8c7ff
+- Dark gray blue: hsl(224, 30%, 27%) #303b5a
 
 ### Notes
 
