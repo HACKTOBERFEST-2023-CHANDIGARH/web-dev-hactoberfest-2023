@@ -1,0 +1,206 @@
+import React from 'react';
+
+const Components = () => {
+  return (
+    <div className='box'>
+    <div className="container">
+    <div className='img'>
+      <picture>
+        <source
+          media="(min-width: 640px)"
+          srcset="image-product-desktop.jpg"
+        />
+        <img src="image-product-mobile.jpg" alt="" />
+      </picture>
+    </div>
+    <div>
+    <h2>perfume</h2>
+
+    <h1>Gabrielle Essence Eau De Parfum</h1>
+
+    <p>
+      A floral, solar and voluptuous interpretation composed by Olivier
+      Polge, Perfumer-Creator for the House of CHANEL.
+    </p>
+
+    <ul>
+      <li class="prc-tag">$149.99</li>
+      <li><s>$169.99</s></li>
+    </ul>
+
+    <button class="btn">
+      <img src="./images/icon-cart.svg" alt="" /> Add to Cart
+    </button>
+  </div>
+  </div>
+  </div>
+  )
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+   align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 0.2px);
+  margin: 0 1.5rem;
+  
+}button,
+
+li {
+  font-family: inherit;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+  margin-left: .5rem;
+}
+
+.prc-tag {
+  color: hsl(158, 37%, 25%);
+}
+
+h1,
+.prc-tag   {
+  font-weight:900;
+  margin-left:.5rem;
+  font-family:"Fraunces", sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: hsl(228, 10%, 51%);
+  margin-left: .5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5 rem;
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.8;
+ margin-left: .5rem;
+}
+
+.container {
+  max-width: 650px;
+}
+
+.container h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-left: .5rem;
+}
+
+.container .img:first-child img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.container .img:last-child {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0 0 1rem 1rem;
+  margin-top: -1rem;
+}
+
+.container p {
+  margin-bottom: 2rem;
+}
+
+.container ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.container ul li:first-child {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+.container ul li:nth-child(2) {
+  color: hsl(228, 12%, 48%);
+}
+
+.container .btn {
+  background-color: hsl(158, 50%, 24%);
+  color: #fff;
+  font-weight: 890;
+  width: 90%;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 0.625rem;
+  margin-left:0.5rem;
+  transition: 0.6s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  
+}
+
+.container .btn:hover {
+  background-color: hsl(158, 38%, 20%);
+}
+
+.container .btn img {
+  margin-right: 0.5rem;
+}
+
+
+
+@media (min-width: 640px) {
+  .box{
+    box-shadow: black;
+    z-index: 6;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container .img:first-child img {
+    border-radius: 0.625rem 0 0 0.625rem;
+    width: 100%;
+  }
+
+  .container .img:last-child {
+    border-radius: 0 0.625rem 0.625rem 0;
+    margin-top: 0;
+    padding: 1.5rem 1.5rem 0;
+  }
+
+  picture img {
+    height: 90%;
+  }
+
+  .container p {
+    margin-bottom: 1rem;
+  }
+}
+WEBSITE LINK [https://hacktobercommit.netlify.app/]
+
+
