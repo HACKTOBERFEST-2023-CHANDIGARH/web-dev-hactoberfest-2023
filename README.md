@@ -1,73 +1,67 @@
-# Hacktoberfest 2023
+# HACKTOBER FEST 2023 WEB DEV
 
-This the repository i'm hosting for HACKTOBERFEST 2023, to help my college mates to embark their journey in Open-Source.
-![hf10_vert_fcl_cmyk](https://github.com/ankitmrmishra/hacktoberfest2023/assets/68045075/2af8577c-eadc-42ae-8845-a9e98323f322)
+This is a solution to the Problem statement given in the HACKTOBERFEST 2023
 
-# ALERT
+## Table of contents
 
-- Do not Spam in the repository, i'll make sure you must get disqualified for the hacktoberfest if any such behaviour is found. Please read [CONTRIBUTING.md](/contributingGuide.md) and [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md) for details on our code of conduct, and the process for submitting pull requests to us.
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-# What is in the repo and What to Contribute.
+### The challenge
 
-- In ths repo You Will find Different folders with Different tasks. Do checkout each task and each folder to contribute.
-- No palagrism is entertained.
-- The Pull Request must be clean and In a proper way. if you don't know how to do this, learn it, from Youtube, ChatGPT and other different Sources.
-- Do not spam here.
-- 1 person can contribute only one time in a particular folder.
-
-## The challenges
-
-Your challenge is to build out this results summary component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-We provide the data for the results in a local `data.json` file. So you can use that to add the results and total score dynamically if you choose.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- **Bonus**: Use the local JSON data to dynamically populate the content
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](../results-summary-component-main/Dhanveeryadav-summary-component/Screenshots/section-1.png)
+![](../results-summary-component-main/Dhanveeryadav-summary-component/Screenshots/section-2.png)
+![](../results-summary-component-main/Dhanveeryadav-summary-component/Screenshots/desktop-layout.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+### Links: (https://shimmering-palmier-ebf6f8.netlify.app)
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+- Live Site URL:
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+## My process
 
-## Building your project
+### Built with
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### What I learned
 
-## Deploying your project
+While developing this project I learned about HTMLCollection, in HTMlCollection you can't use forEach loop as HTMLCollections do not have the forEach method by default. So To access elements you can foor loop (normal one).
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+To see how you can add code snippets, see below:
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+```html
+<img class="img-icon" alt="reaction-icon" />
+```
 
-## Create a custom `README.md`
+```js
+const imgCollection = document.getElementsByTagName("img");
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+for(let i = 0 ; i < imgCollection.length; i++) {
+    const img = imgCollection[i]
+    img.setAttribute("src", eleData[i].icon)
+}
+```
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+## Author
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- Github - [Dhanveeryadav](https://github.com/Dhanveeryadav)
+- Frontend Mentor - [@Dhanveeryadav](https://www.frontendmentor.io/profile/yourusername)
 
-## THANKS TO FRONTEND MENTOR for the challenge and helping us in the HACKTOBERFEST
-
-**Have fun building!** 🚀
+The solution folders are inside the
+```
+web-dev-hactoberfest-2023/easy/results-summary-component-main/Dhanveeryadav-summary-component
+```
