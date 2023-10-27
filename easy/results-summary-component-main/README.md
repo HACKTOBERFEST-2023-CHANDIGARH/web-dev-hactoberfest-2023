@@ -25,7 +25,7 @@ Users should be able to:
 ![](../results-summary-component-main/Dhanveeryadav-summary-component/Screenshots/desktop-layout.png)
 
 
-### Links: (https://shimmering-palmier-ebf6f8.netlify.app)
+### Links
 
 - Live Site URL:
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summary-Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="lg-container">
+      <section class="section-primary">
+        <div>
+          <h1 class="result">Your Result</h1>
+          <div class="background-circle">
+            <div class="circle-inner-content">
+              <span class="marks">76</span>
+              <p class="total-marks">of 100</p>
+            </div>
+          </div>
+          <div>
+            <h2 class="remarks">Great</h2>
+            <p class="score-feedback">
+              You score higher than 65% of the <br />
+              people who have taken these tests.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-secondary">
+        <h3 class="Summary">Summary</h3>
+        <div class="result-status">
+          <div class="reaction color">
+            <div class="flex-container">
+              <img class="img-icon" alt="reaction-icon" />
+              <h4 class="reaction-title title">Reaction</h4>
+              <div class="score-obtained">
+                <span class="full-marks"
+                  ><strong class="get-score">80 </strong>/ 100</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="memory color">
+            <div class="flex-container">
+              <img class="img-icon" alt="memory-icon" />
+              <h4 class="memory-title title">Memory</h4>
+              <div class="score-obtained">
+                <span class="full-marks"
+                  ><strong class="get-score">92 </strong>/ 100</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="verbal color">
+            <div class="flex-container">
+              <img class="img-icon" alt="verbal-icon" />
+              <h4 class="verbal-title title">Verbal</h4>
+              <div class="score-obtained">
+                <span class="full-marks"
+                  ><strong class="get-score">61 </strong>/ 100</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="visual color">
+            <div class="flex-container">
+              <img class="img-icon" alt="visual-icon" />
+              <h4 class="visual-title title">Visual</h4>
+              <div class="score-obtained">
+                <span class="full-marks"
+                  ><strong class="get-score">72 </strong>/ 100</span
+                >
+              </div>
+            </div>
+          </div>
+          <input class="btn" type="button" value="Continue" />
+        </div>
+      </section>
+    </div>
+    <script type="module" src="scripts.js"></script>
+  </body>
+</html>
